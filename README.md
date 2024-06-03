@@ -1,18 +1,18 @@
-# Guia de Instalación del interprete 
+## Interpreter Installation Guide
 
-### Paso: 1
+### Step 1:
 
-Ejecuta el comando `pip3 install virtualenv`
+Run the command `pip3 install virtualenv`
 
-### Paso: 2
+### Step 2:
 
-Ejecuta el comando `python -m virtualenv venv`
+Run the command `python -m virtualenv venv`
 
-### Paso: 3
+### Step 3:
 
 #### Visual Studio code:
 
-3.1: Instala la extension Python.
+3.1: Install the Python extension.
 
 >Name: Python
 >Id: ms-python.python
@@ -21,10 +21,26 @@ Ejecuta el comando `python -m virtualenv venv`
 >Publisher: Microsoft
 >>VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
-3.2 Presione F1 en VSCode y seleccione la opcion `Select interpreter`
+3.2 Press F1 in VSCode and select the option `Select interpreter`
 
 ![Select interpreter in VSCode](./readmeFiles/selectInterpreter.png "Command Palette")
 
-3.3 Seleccione el archivo python en la direccion `env/bin/python`
+3.3 Select the python file at the address `env/bin/python`
 
 ![python in the venv folder](./readmeFiles/venvPython.png "options interpreter")
+
+### Step 4: Run the project
+
+Run the command `python app.py`
+
+## Connection with PostgreSQL
+
+- Have PostgreSQL installed
+
+- Install libpq-dev with the command `apt install libpq-dev`
+
+- Install psycopg2 `pip install psycopg2`
+
+
+
+
